@@ -1,0 +1,75 @@
+/* Assign variables*/
+:root{
+ --bkColor: white;
+ --titColor: black;
+ --subtitColor: darkGrey;
+ --links: green;
+ --bkBtnColor: blue;
+ --txtBtnColor: white;
+}
+
+/* Reset some default styles and provide a clean slate*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aply a font to the entire page*/
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+/* Content attributes*/
+html, body{
+    height: 100%;
+    background-color: var(--bkColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style links*/
+a {
+    text-decoration: none;
+    color: var(--links);
+
+}
+
+/* Responsive centered container*/
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bkColor);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* Style buttons*/
+button{
+    background-color: var(--bkBtnColor);
+    color: var(--txtBtnColor);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    filter: brightness();
+}
+
+/* Responsive design*/
+@media (max-width:768px){
+    .container{
+        padding: 10px;
+    }
+    button{
+        padding: 8px 16px;
+    }
+}
+
+
